@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jesse Klijnsma</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --background-color: #f8f9fa;
+            --foreground-color: #1a1a1a;
+            --primary-color: #007bff;
+        }
+
+        * {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-color: var(--background-color);
+            color: var(--foreground-color);
+            font-family: Open Sans, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h1,
+        h2{
+            font-family: 'Bebas Neue';
+            letter-spacing: 0.02em;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+
+        .section {
+            margin: 0;
+        }
+        
+
+        .round {
+            border-radius: 50%;
+            border-color: var(--primary-color);
+            border-width: 10px;
+            border-style: solid;
+        }
+
+        .section.header {
+            height: 300px;
+        }
+
+        .header .name {
+            margin: 0;
+        }
+        
+        .me-container {
+            position: absolute;
+            top: 0;
+            height: inherit;
+            padding: 30px;
+        }
+
+        .me {
+            height: 100%;
+        }
+        
+        .header .header-top {
+            background-color: var(--primary-color);
+            height: 50%;
+            color: var(--background-color);
+            display: flex;
+            align-items: flex-end;
+            padding: 0 0 0 330px;
+        }
+
+        .header .header-bottom {
+            background-color: transparent;
+            height: 50%;
+            padding: 0 0 0 330px;
+        }
+
+        .vertical-divider:before {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 100%;
+            background-color: var(--primary-color);
+            position: absolute;
+            left: 300px;
+        }
+        
+        .section-container {
+            display: grid; 
+            grid-auto-columns: 300px 1fr; 
+            grid-auto-rows: auto;
+            gap: 0px 0px; 
+        }
+
+        .section-container .section.right {
+            grid-column: 2;
+            padding: 0 30px;
+        }
+
+        .section-container .section.left {
+            padding: 20px 30px;
+            text-align: end;
+        }
+
+        .section-container .section.left h2 {
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="section header">
+        <div class="header-top">
+            <h1 class="name">Jesse Klijnsma</h1>
+        </div>
+        <div class="header-bottom vertical-divider">
+            <div class="section title">
+                <p><i class="bi-envelope"></i>&nbsp&nbsp<a href="mailto:jesseklijnsma@gmail.com">jesseklijnsma@gmail.com</a></p>
+                <p><i class="bi-telephone"></i>&nbsp&nbsp<a href="tel:+">+31 6</a></p>
+            </div>
+        </div>
+        <div class="me-container">
+            <img src="/P8010889.jpeg" alt="Me" class="round me">
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="section left">
+            <h2>Education</h2>
+        </div>
+        <div class="section right">
+            <p>Bachelor of Science in Computer Science, University of XYZ, 2015-2019</p>
+        </div>
+    
+        <div class="section left">
+            <h2>Work Experience</h2>
+        </div>
+        <div class="section right">
+            <p>Software Engineer at ABC Company, 2019-Present</p>
+        </div>
+    
+        <div class="section left">
+            <h2>Skills</h2>
+        </div>
+        <div class="section right">
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML/CSS</li>
+            </ul>
+        </div>
+    
+        <div class="section left">
+            <h2>Projects</h2>
+        </div>
+        <div class="section right">
+            <ul>
+                <li><a href="#">Project 1</a></li>
+                <li><a href="#">Project 2</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html></div>
